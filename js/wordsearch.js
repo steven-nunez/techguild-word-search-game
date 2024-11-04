@@ -25,9 +25,28 @@
     // Default settings
     var default_settings = {
       'directions': ['W', 'N', 'WN', 'EN'],
-      'gridSize': 10,
-      'words': ['one', 'two', 'three', 'four', 'five'],
-	  'wordsList' : [],
+      'gridSize': 20,
+      'words': [
+        'Action',
+        'Bargaining',
+        'Picket',
+        'Fair',
+        'JustCause',
+        'Mediate',
+        'Wages',
+        'RTO',
+        'Remote',
+        'Union',
+        'Negotiate',
+        'Solidarity',
+        'Labor',
+        'Contract',
+        'Equity',
+        'United',
+        'Power',
+        'ZZZZZ'
+      ],
+	    'wordsList' : [],
       'debug': false
     }
     this.settings = Object.merge(settings, default_settings);

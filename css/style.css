@@ -16,7 +16,7 @@ body {
 /* Common */
 
 .fix {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .fix:after {
@@ -45,8 +45,9 @@ body {
 }
 
 .ws-words {
-  margin-left: 20px;
-  text-align: left;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
 }
 
 .ws-word {
