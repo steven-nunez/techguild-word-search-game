@@ -1,7 +1,7 @@
 /* Wordsearch */
 
 .ws-area {
-  background: #fafafa;
+  background: #b42f2e;
   display: inline-block;
   padding: 20px;
   border-radius: 10px;
@@ -20,11 +20,11 @@
 }
 
 .ws-col.ws-selected {
-  background: #eee;
+  background: #272727;
 }
 
 .ws-found {
-  background: red;
+  background: #f94040;
 }
 
 .ws-game-over-outer {

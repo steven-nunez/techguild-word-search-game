@@ -10,27 +10,24 @@
     <div class="wrap">
       <h1 class="logo">NYT Tech Guild Word Search</h1>
       <section id="ws-area"></section>
-      <table class="ws-words"></table>
+      <div class="ws-words"></div>
     </div>
-    <a href="https://github.com/lizhineng/word-search-game"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/forkme_right_red.png" alt="Fork me on GitHub"></a>
+    <a href="https://www.gofundme.com/f/nyt-tech-strike-fund"><img style="position: absolute; top: 0; right: 0; border: 0;" height="75px" width="75px" src="images/guild_logo.png" alt="Guild Logo"><p style="position: absolute; top: 80px; right: 0; border: 0;">Donate to our GoFundMe</p></a>
     <script src="js/utility.js"></script>
     <script src="js/wordsearch.js"></script>
     <script type="text/javascript">
       var gameAreaEl = document.getElementById('ws-area');
       var gameobj = gameAreaEl.wordSearch();
 
-      function addItemsToTable(items, table) {
-        let row;
+      function addItemsToTable(items, container) {
 
-        for (let i = 0; i < items.length; i++) {
-          if (i % 5 === 0) {
-            // Create a new row after every 5 items
-            row = table.insertRow();
-          }
+        items.forEach(item => {
+          const node = document.createElement('div');
+          node.textContent = item;
+          node.classList.add('ws-word');
 
-          const cell = row.insertCell();
-         cell.textContent = items[i];
-        }
+          container.appendChild(node);
+        })
       }
 
       // Put words into `.ws-words`

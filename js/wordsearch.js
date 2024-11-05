@@ -258,7 +258,7 @@
         ctx.font = '400 28px Calibri';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#333'; // Text color
+        ctx.fillStyle = '#ffffff'; // Text color
         ctx.fillText(this.matrix[row][col].letter, x, y);
 
         // Add event listeners
@@ -358,7 +358,7 @@
 
       //Cross word off list.
       var wordList = document.querySelector(".ws-words");
-      var wordListItems = wordList.getElementsByTagName("li");
+      var wordListItems = wordList.getElementsByTagName("div");
       for(var i=0; i<wordListItems.length; i++){
         if(words[0] == removeDiacritics(wordListItems[i].innerHTML.toUpperCase())){			
           if(wordListItems[i].innerHTML != "<del>"+wordListItems[i].innerHTML+"</del>") { //Check the word is never found

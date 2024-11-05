@@ -39,19 +39,21 @@ body {
   margin-bottom: 40px;
 }
 
-.ws-area, .ws-words {
+.ws-area {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 10px;
 }
 
 .ws-words {
-  margin-left: 35px;
-  margin-right: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+  grid-gap: 10px;
   text-align: center;
 }
 
 .ws-word {
-  margin-bottom: 4px;
+  padding: 10px;
 }
 
 .ws-words ::first-letter{
