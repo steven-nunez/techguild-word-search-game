@@ -7,6 +7,7 @@ body, h1 {
 
 h1 {
   text-transform: uppercase;
+  font-family: monospace;
 }
 
 body {
@@ -35,8 +36,8 @@ body {
   position:relative;
 }
 
-.logo, #gameArea {
-  margin-bottom: 40px;
+.logo, #gameArea, .ws-words {
+  margin-bottom: 20px;
 }
 
 .ws-area {
@@ -48,12 +49,12 @@ body {
 .ws-words {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
-  grid-gap: 10px;
+  grid-gap: 5px;
   text-align: center;
 }
 
 .ws-word {
-  padding: 10px;
+  padding: 5px;
 }
 
 .ws-words ::first-letter{
