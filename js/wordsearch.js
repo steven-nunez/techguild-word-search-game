@@ -44,6 +44,7 @@
         'Equity',
         'United',
         'Power',
+        'Strike'
       ],
 	    'wordsList' : [],
       'debug': false
